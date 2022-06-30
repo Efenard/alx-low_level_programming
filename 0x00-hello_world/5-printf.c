@@ -1,10 +1,16 @@
 #include <stdio.h>
 
-/* main - to be called */
- /* return:0 for the int */
+/**
+* main - Entry point
+*
+* Description: 'the program's description'
+*
+* Return: Always 0 (Success)
+*/
 
 int main(void)
 {
-printf("with proper grammar, but the outcome is a piece of art,\n");
-return (0);
+	/* This is a printf function */
+	printf("with proper grammar, but the outcome is a piece of art,\n");
+	return (0);
 }
