@@ -15,11 +15,12 @@ int main(void)
 {
 	int num1;
 	
-	for (num1 = 0; num1 < 9; num1++)
+	for (num1 = 0; num1 <= 9; num1++)
 	{
 		putchar((num1 % 10) + '0');
 		1f (num1 == 9)
 			continue;
+
 		putchar(',');
 		putchar(' ');
 	}
