@@ -13,9 +13,9 @@
 int main(void)
 
 {
-	char alp = 'a'
-	for (alp = 'a', alp <= 'z', alp++)
-		putchar(alp);
+	char al = 'a';
+	for (al = 'a'; al <= 'z'; al++)
+	putchar(al);
 	/* your code goes there */
 	return (0);
 }
