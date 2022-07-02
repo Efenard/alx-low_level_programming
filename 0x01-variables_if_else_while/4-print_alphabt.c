@@ -2,15 +2,25 @@
 #include <stdlib.h>
 #include <time.h>
 
-/* more headers goes there */
-/* betty style doc for function main goes there */
+/**
+ * main - Entry point
+ *
+ * Description: '4 Alphabets'
+ *
+ * Return: Always 0 (Success)
+ */
 
 int main(void)
 
 {
-	int n;
-	srand(time(0));
-	n = rand() - RAND_MAX / 2;
+	char al = 'a';
+	
+	for (al = 'a'; al <= 'z'; al++)
+	while (al != 'e' && al != 'q')
+	{
+		putchar(al);
+	}
+	putchar('\n');
 	/* your code goes there */
 	return (0);
 }
