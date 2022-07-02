@@ -2,15 +2,25 @@
 #include <stdlib.h>
 #include <time.h>
 
-/* more headers goes there */
-/* betty style doc for function main goes there */
+/**
+ * main - Entry point
+ *
+ * Description: '3-print_alphabets'
+ *
+ * Return: Always 0 (Success)
+ */
 
 int main(void)
 
 {
-	int n;
-	srand(time(0));
-	n = rand() - RAND_MAX / 2;
+	char al = 'a';
+	char ab = 'A';
+
+	for (al = 'a'; al <= 'z'; al++)
+	putchar(al);
+	for (ab = 'A'; ab <= 'Z'; ab++)
+	putchar(ab);
+	putchar('\n');
 	/* your code goes there */
 	return (0);
 }
