@@ -20,7 +20,6 @@ int main(void)
 		putchar((num1 % 10) + '0');
 		if (num1 == 9)
 			continue;
-
 		putchar(',');
 		putchar(' ');
 	}
