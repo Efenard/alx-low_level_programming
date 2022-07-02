@@ -14,6 +14,7 @@ int main(void)
 
 {
 	char al = 'a';
+
 	for (al = 'a'; al <= 'z'; al++)
 	putchar(al);
 	/* your code goes there */
