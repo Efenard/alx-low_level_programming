@@ -16,7 +16,7 @@ int main(void)
 	char al = 'a';
 	
 	for (al = 'a'; al <= 'z'; al++)
-	while (al != 'e' && al != 'q')
+	while (al != 'e' || al != 'q')
 	{
 		putchar(al);
 	}
