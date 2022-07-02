@@ -2,15 +2,29 @@
 #include <stdlib.h>
 #include <time.h>
 
-/* more headers goes there */
-/* betty style doc for function main goes there */
+/**
+ * main - Entry point
+ *
+ * Description: '9-print_comb'
+ *
+ * Return: Always 0 (Success)
+ */
 
 int main(void)
 
 {
-	int n;
-	srand(time(0));
-	n = rand() - RAND_MAX / 2;
+	int num1;
+	
+	for (num1 = 0; num1 < 9; num1++)
+	{
+		putchar((num1 % 10) + '0');
+		1f (num1 == 9)
+			continue;
+		putchar(',');
+		putchar(' ');
+	}
+	putchar('\n');
+
 	/* your code goes there */
 	return (0);
 }
