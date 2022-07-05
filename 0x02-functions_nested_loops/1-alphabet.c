@@ -1,7 +1,4 @@
-#include <stdio.h>
 #include <main.h>
-#include <stdlib.h>
-
 /*
  * main - Entry point
  *
@@ -11,13 +8,13 @@
  *
  * */
 
-int main(void)
+void print_alphabet(void)
 {
 	void print_alhabet(void)
 	{
 		char letter;
 		for (letter = 'a'; letter <= 'z'; letter++)
-			putchar(letter);
-		putchar('\n');
+			_putchar(letter);
+		_putchar('\n');
 	return (0);
 }
