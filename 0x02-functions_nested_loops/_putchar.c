@@ -1,11 +1,10 @@
-#include <stdio.h>
-#include <main.h>
-
+#include "main.h"
+#include <unistd.h>
 /*
  *
+ * _putchar - writes the chacter
  *
- *
- *
+ *Return: Always 0 (Success)
  *
  *
  * */
