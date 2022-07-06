@@ -1,9 +1,9 @@
 #include <stdio.h>
 #include "main.h"
 /*
- * main - Entry point
+ * main - funtion to print
  *
- * Description: 'script that print _putchar'
+ * description: 'script that print _putchar'
  *
  * Return: Always 0 (Success)
  *

@@ -3,7 +3,7 @@
 /**
  * void print_alphabet_x10 - Entry point
  *
- * Description: '2 print_alphabetx10'
+ * print_alphabetx10'
  *
  * Return: Always 0 (Success)
  *
