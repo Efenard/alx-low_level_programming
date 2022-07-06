@@ -2,8 +2,6 @@
 /*
  * main - funtion to print
  *
- * description: 'script that print _putchar'
- *
  * Return: 0
  **/
 
