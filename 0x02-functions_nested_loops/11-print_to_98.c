@@ -5,7 +5,6 @@
  *
  * @n: The number to begin count at
  *
- * Return: Always 0
  *
  **/
 
