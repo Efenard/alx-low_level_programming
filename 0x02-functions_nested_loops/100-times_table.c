@@ -4,13 +4,14 @@
  * print_times_table - print all the times table of the input starting with 0
  *
  * @n: The value of the times table to be printed
- * 
+ *
  * Return: Th table
  *
  **/
 
 void print_times_table(int n)
-{	int num, mult, prod;
+{
+	int num, mult, prod;
 	
 	if (n >= 0 && n <= 15)
 	{
