@@ -5,7 +5,7 @@
  *
  * @n: The number to begin count at
  *
- * Return: The result of the addition
+ * Return: Always 0
  *
  **/
 
