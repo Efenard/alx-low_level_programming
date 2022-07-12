@@ -11,13 +11,14 @@
  * Return: A pointer to the destination string
  *
  */
+
 char *_strcpy(char *dest, char *src)
 {
-	int index = 0;
-	
-	for(; src[index] != '\0'; index++)
+	int i = 0;
+
+	for (; src[i] != '\0'; i++)
 	{
-		dest[index] = src[index];
+		dest[i] = src[i];
 	}
 	return (dest);
 }
