@@ -2,19 +2,17 @@
 #include <stdio.h>
 
 /**
- * main - check the code
+ * _strlen - Returns the lenght of a string
  *
- * Return: Always 0.
+ * @s: Holds the string
  *
  */
-
-int main (void)
+ 
+int _strlen(char *s)
 {
-	int n;
+	int len;
 
-	n = 40;
-	printf("n=%d\n", n);
-	reset_to_98(&n);
-	printf("n=%d\n", n);
+	len = strlen(*s);
+	printf("%d\n", len);
 	return (0);
 }
