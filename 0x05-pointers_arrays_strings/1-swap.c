@@ -2,19 +2,18 @@
 #include <stdio.h>
 
 /**
- * main - check the code
+ * swap_int - Swaps the value of two  int
  *
- * Return: Always 0.
+ * @a: The first integer
+ *
+ * @b: The second integer
  *
  */
 
-int main (void)
+void swap_int(int *a, int *b)
 {
-	int n;
+	int temp = *a;
 
-	n = 40;
-	printf("n=%d\n", n);
-	reset_to_98(&n);
-	printf("n=%d\n", n);
-	return (0);
+	*a = *b;
+	*b = temp;
 }
