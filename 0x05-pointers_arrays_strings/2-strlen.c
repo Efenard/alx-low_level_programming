@@ -10,7 +10,9 @@
  
 int _strlen(char *s)
 {
-	int len;
-	len = _strlen(*s);
-	printf("%d", len);
+	int len = 0;
+
+	while (*s++)
+		len++;
+	return (len);
 }
