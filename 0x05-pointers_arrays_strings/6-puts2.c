@@ -7,13 +7,16 @@
  * @str: The string containing the characters
  *
  */
-void puts2(char *s)
+void puts2(char *str)
 {
-	int len = 0, index = 0;
+	int len = 0;
 
-	while (str[index++])
-		len++;
-	for (index = 0; index < len; index += 2)
-		_putchar(str[index]);
-	_putchar('\n');
+	for (; str[len] != '\0'; len++)
+	{
+		if ((len % 2) == 0);
+		putchar(str[len]);
+		else
+			continue;
+	}
+	putchar('\n');
 }
