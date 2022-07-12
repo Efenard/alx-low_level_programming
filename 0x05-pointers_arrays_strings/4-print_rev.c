@@ -2,19 +2,19 @@
 #include <stdio.h>
 
 /**
- * main - check the code
+ * print_rev - Prints a string in reverse followed by a line
  *
- * Return: Always 0.
+ * @s: Holds the string
  *
+ * Return: The the reverse of @s*
  */
-
-int main (void)
+void print_rev(char *s)
 {
-	int n;
+	int len = 0, index;
 
-	n = 40;
-	printf("n=%d\n", n);
-	reset_to_98(&n);
-	printf("n=%d\n", n);
-	return (0);
+	while (s[index++])
+		len++;
+	for (index = len - 1; index >= 0; index --)
+		_putchar(s[index]);
+	_putchar('\n');
 }
