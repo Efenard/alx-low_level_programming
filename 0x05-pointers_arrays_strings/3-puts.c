@@ -2,19 +2,15 @@
 #include <stdio.h>
 
 /**
- * main - check the code
+ * _puts - Prints a string folloed by a newline
  *
- * Return: Always 0.
+ * @*str: Holds the string
  *
+ * Return: The string *str followed by new line
  */
-
-int main (void)
+void _puts(char *str)
 {
-	int n;
-
-	n = 40;
-	printf("n=%d\n", n);
-	reset_to_98(&n);
-	printf("n=%d\n", n);
-	return (0);
+	while (*str++)
+		_putchar(*str++);
+	_putchar('\n');
 }
