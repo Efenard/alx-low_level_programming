@@ -2,19 +2,23 @@
 #include <stdio.h>
 
 /**
- * main - check the code
+ * print_array - Prints inputted number of elemnts
  *
- * Return: Always 0.
+ * @a: The arry
+ *
+ * @n: The number of elements to be printed
  *
  */
-
-int main (void)
+void print_array(int *a, int n)
 {
-	int n;
+	int index;
 
-	n = 40;
-	printf("n=%d\n", n);
-	reset_to_98(&n);
-	printf("n=%d\n", n);
-	return (0);
+	for (index = 0; index < n; index++)
+	{
+		printf("%d", a[index]);
+		if (index == n - 1)
+			continue;
+		printf(", ");
+	}
+	printf("\n");
 }

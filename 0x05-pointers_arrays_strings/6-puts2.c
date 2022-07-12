@@ -2,19 +2,18 @@
 #include <stdio.h>
 
 /**
- * main - check the code
+ * puts2 - Prints one character out of two strings
  *
- * Return: Always 0.
+ * @str: The string containing the characters
  *
  */
-
-int main (void)
+void puts2(char *s)
 {
-	int n;
+	int len = 0, index = 0;
 
-	n = 40;
-	printf("n=%d\n", n);
-	reset_to_98(&n);
-	printf("n=%d\n", n);
-	return (0);
+	while (str[index++])
+		len++;
+	for (index = 0; index < len; index += 2)
+		_putchar(str[index]);
+	_putchar('\n');
 }

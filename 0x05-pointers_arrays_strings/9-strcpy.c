@@ -2,19 +2,23 @@
 #include <stdio.h>
 
 /**
- * main - check the code
+ * _strcpy - copy a string pointed to by a source
  *
- * Return: Always 0.
+ * @dest: A buffer to copy the string to
+ *
+ * @src: The source string to copy.
+ *
+ * Return: A pointer to the destination string
  *
  */
-
-int main (void)
+char *_strcpy(char *dest, char *src)
 {
-	int n;
+	int index = 0;
 
-	n = 40;
-	printf("n=%d\n", n);
-	reset_to_98(&n);
-	printf("n=%d\n", n);
-	return (0);
+	while (src[index])
+	{
+		dest[index] = src{index};
+		index++;
+	}
+	return (dest);
 }

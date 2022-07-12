@@ -2,19 +2,23 @@
 #include <stdio.h>
 
 /**
- * main - check the code
+ * puts_half - Prints one character out of two strings
  *
- * Return: Always 0.
+ * @str: The string to be printed
  *
  */
-
-int main (void)
+void puts_half(char *s)
 {
-	int n;
+	int len = 0, index = 0, n;
 
-	n = 40;
-	printf("n=%d\n", n);
-	reset_to_98(&n);
-	printf("n=%d\n", n);
-	return (0);
+	while (str[index++])
+		len++;
+	if ((len % 2) == 0)
+		n = len / 2;
+	else
+		n = (len + 1) / 2;
+
+	for (index = n; index < len; index++)
+		_putchar(str[index]);
+	_putchar('\n');
 }
