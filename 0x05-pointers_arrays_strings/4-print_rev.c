@@ -8,7 +8,9 @@
  *
  * Return: The string in reverse
  */
+
 void print_rev(char *s)
+
 {
 	int num = 0;
 	int i, n;
