@@ -4,9 +4,9 @@
 /**
  * _puts - Prints a string folloed by a newline
  *
- * @*str: Holds the string
+ * @str: Holds the string
  *
- * Return: The string *str followed by new line
+ * Return: The string str followed by new line
  */
 void _puts(char *str)
 {
