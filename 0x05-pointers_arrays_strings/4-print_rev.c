@@ -5,6 +5,7 @@
  *
  * print_rev - Prints a string in reverse.
  *
+ * num is to firt count to the end, n is to count back
  * @*s: The string to be printed
  *
  * Return: string in reverse
