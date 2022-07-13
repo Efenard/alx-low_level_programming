@@ -7,6 +7,7 @@
  *
  * @*s: The string to be printed
  *
+ * Return: string in reverse
  **/
 
 void print_rev(char *s)
