@@ -9,32 +9,40 @@
  *
  * @src: Source String
  *
+ * Return: Concartinated strings
+ *
  * */
 char *_strcat(char *dest, char *src)
 
 {
 
-		int i = 0, lenght = 0;
+		int dlen = 0, i;
 
 
 
-			while (*(dest + lenght) != '\0')
+			while (dest[dlen])
 
-						lenght++;
+					{
 
-				for (i = 0; *(src + i) != '\0'; i++)
+								dlen++;
+
+									}
+
+
+
+				for (i = 0; src[i] != 0; i++)
 
 						{
 
-									*(dest + lenght) = *(src + i);
+									dest[dlen] = src[i];
 
-											lenght++;
+											dlen++;
 
 												}
 
-					*(dest + lenght) = *(src + i);
 
 
+					dest[dlen] = '\0';
 
 						return (dest);
 
