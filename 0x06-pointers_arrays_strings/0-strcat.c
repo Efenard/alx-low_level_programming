@@ -10,31 +10,32 @@
  * @src: Source String
  *
  * */
-
 char *_strcat(char *dest, char *src)
 
 {
 
-		int i, n;
+		int i = 0, lenght = 0;
 
 
 
-			for (i = 0; dest[i] != '\0'; i++)
+			while (*(dest + lenght) != '\0')
 
-					{
+						lenght++;
 
-							}
-
-
-
-				for (n = 0; (dest[i + n] = *src++) != '\0'; n++)
+				for (i = 0; *(src + i) != '\0'; i++)
 
 						{
 
-								}
+									*(dest + lenght) = *(src + i);
+
+											lenght++;
+
+												}
+
+					*(dest + lenght) = *(src + i);
 
 
 
-					return (dest);
+						return (dest);
 
 }
