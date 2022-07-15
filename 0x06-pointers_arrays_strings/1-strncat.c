@@ -3,7 +3,7 @@
 
 /*
  *
- * *_strcat(char *dest, char *src) - Function that concatenates two strings.
+ * *_strncat - Function that concatenates two strings.
  *
  * @dest: Destination String
  *
@@ -11,10 +11,44 @@
  *
  * */
 
-char *_strcat(char *dest, char *src)
+char *_strncat(char *dest, char *src, int n)
+
 {
-	char str1;
-	
-	str1 = _strcat(dest, src);
-	
+
+		int dlen = 0, j = 0;
+
+
+
+			while (dest[dlen])
+
+					{
+
+								dlen++;
+
+									}
+
+
+
+				while (j < n && src[j])
+
+						{
+
+									dest[dlen] = src[j];
+
+											dlen++;
+
+													j++;
+
+														}
+
+
+
+					dest[dlen + n + 1] = '\0';
+
+
+
+						return (dest);
+
 }
+
+
