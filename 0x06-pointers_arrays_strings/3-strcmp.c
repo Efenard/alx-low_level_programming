@@ -1,15 +1,21 @@
 #include "main.h"
-#include <stdio/h>
 
-/*
+
+
+/**
  *
- * _strcmp - Function that concatenates two strings.
+ *   * _strcmp - Compares two strings
  *
- * @s1: Destination String
+ *     * @s1: The first string
  *
- * @s2: Source String
+ *       * @s2: The second string
  *
- * */
+ *         *
+ *
+ *           * Return: int value
+ *
+ *             */
+
 int _strcmp(char *s1, char *s2)
 
 {
