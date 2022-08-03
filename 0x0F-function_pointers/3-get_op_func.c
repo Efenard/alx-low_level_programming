@@ -1,105 +1,57 @@
-#include "3-calc.h"
-
 #include <stdlib.h>
 
 #include <stdio.h>
 
-/**
- *
- *  * op_add - 5 functions
- *
- *   * @a: input one
- *
- *    * @b: input two
- *
- *     * Return: 0
- *
- *      */
-
-int op_add(int a, int b)
-
-{
-
-		return (a + b);
-
-}
+#include "3-calc.h"
 
 /**
  *
- *  * op_sub - 5 functions
+ *  * get_op_func - matches operator from main
  *
- *   * @a: input one
+ *   * @s: op str
  *
- *    * @b: input two
+ *    * Return: 0
  *
- *     * Return: 0
- *
- *      */
+ *     */
 
-int op_sub(int a, int b)
+int (*get_op_func(char *s))(int, int)
 
 {
 
-		return (a - b);
+		op_t op_s[] = {
 
-}
+					{"+", op_add},
 
-/**
- *
- *  * op_mul - 5 functions
- *
- *   * @a: input one
- *
- *    * @b: input two
- *
- *     * Return: 0
- *
- *      */
+							{"-", op_sub},
 
-int op_mul(int a, int b)
+									{"*", op_mul},
 
-{
+											{"/", op_div},
 
-		return (a * b);
+													{"%", op_mod},
 
-}
+															{NULL, NULL}
 
-/**
- *
- *  * op_div - 5 functions
- *
- *   * @a: input one
- *
- *    * @b: input two
- *
- *     * Return: 0
- *
- *      */
+						};
 
-int op_div(int a, int b)
 
-{
 
-		return (a / b);
+			int i = 0;
 
-}
 
-/**
- *
- *  * op_mod - 5 functions
- *
- *   * @a: input one
- *
- *    * @b: input two
- *
- *     * Return: 0
- *
- *      */
 
-int op_mod(int a, int b)
+				while (op_s[i].op)
 
-{
+						{
 
-		return (a % b);
+									if (*(op_s[i].op) == *s)
+
+													return (op_s[i].f);
+
+											i++;
+
+												}
+
+					return (NULL);
 
 }
